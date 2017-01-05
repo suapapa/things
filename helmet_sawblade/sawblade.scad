@@ -1,6 +1,6 @@
-$fn = 100;
+$fn = 200;
 
-translate([0, 0, 45]) rotate([-90, 0, 0]) {
+translate([0, 0, 0]) rotate([90, 0, 0]) {
 
 intersection() {
 translate([2.5, 0, 0]) rotate([-90, 180, 0])
