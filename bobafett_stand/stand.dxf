@@ -91,7 +91,7 @@ STANDARD
   9
 $CLAYER
   8
-2nd
+space
   9
 $CELTYPE
   6
@@ -2311,6 +2311,28 @@ CONTINUOUS
 390
 F
   0
+LAYER
+  5
+4D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+space
+ 70
+    0
+ 62
+    7
+  6
+CONTINUOUS
+370
+    0
+390
+F
+  0
 ENDTAB
   0
 TABLE
@@ -2327,7 +2349,7 @@ AcDbSymbolTable
   0
 STYLE
   5
-4D
+4E
 330
 2
 100
@@ -2411,7 +2433,7 @@ ACAD
   0
 APPID
   5
-4E
+4F
 330
 9
 100
@@ -2443,7 +2465,7 @@ AcDbDimStyleTable
   0
 DIMSTYLE
 105
-4F
+50
 330
 A
 100
@@ -2717,30 +2739,6 @@ ENTITIES
   0
 LINE
   5
-50
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbLine
- 10
-0
- 20
-40
- 11
-0
- 21
--40
-  0
-LINE
-  5
 51
 100
 AcDbEntity
@@ -2755,11 +2753,11 @@ ByLayer
 100
 AcDbLine
  10
-18
+0
  20
 40
  11
-18
+0
  21
 -40
   0
@@ -2779,6 +2777,30 @@ ByLayer
 100
 AcDbLine
  10
+18
+ 20
+40
+ 11
+18
+ 21
+-40
+  0
+LINE
+  5
+53
+100
+AcDbEntity
+  8
+0
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbLine
+ 10
 -18
  20
 40
@@ -2789,7 +2811,7 @@ AcDbLine
   0
 LINE
   5
-53
+54
 100
 AcDbEntity
   8
@@ -2813,7 +2835,7 @@ AcDbLine
   0
 CIRCLE
   5
-54
+55
 100
 AcDbEntity
   8
@@ -2835,7 +2857,7 @@ AcDbCircle
   0
 CIRCLE
   5
-55
+56
 100
 AcDbEntity
   8
@@ -2857,7 +2879,7 @@ AcDbCircle
   0
 CIRCLE
   5
-56
+57
 100
 AcDbEntity
   8
@@ -2879,7 +2901,7 @@ AcDbCircle
   0
 CIRCLE
   5
-57
+58
 100
 AcDbEntity
   8
@@ -2898,6 +2920,72 @@ AcDbCircle
 0
  40
 33
+  0
+CIRCLE
+  5
+59
+100
+AcDbEntity
+  8
+space
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+18
+ 20
+0
+ 40
+3
+  0
+CIRCLE
+  5
+5A
+100
+AcDbEntity
+  8
+space
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+-18
+ 20
+0
+ 40
+3
+  0
+CIRCLE
+  5
+5B
+100
+AcDbEntity
+  8
+space
+  6
+ByLayer
+ 62
+  256
+370
+   -1
+100
+AcDbCircle
+ 10
+0
+ 20
+0
+ 40
+30
   0
 ENDSEC
   0
