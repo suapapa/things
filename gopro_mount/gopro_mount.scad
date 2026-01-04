@@ -1,17 +1,24 @@
 use <gopro_mounts_mooncactus.scad>
 
+tw = 20;
+bw = 27.5;
+m = (bw-tw)/2;
+h = 6.5;
+
 union() {
-    translate([27/2, 27/2, 17]) rotate([-90,0,0]) gopro_connector("triple");
+    translate([27/2, 27/2, 19]) rotate([-90,0,0]) gopro_connector("triple");
+    
+    translate([-m/2,-m/2,6.5]) cube([bw+m,bw+m,3]);
 
     cubePoints = [
       [0, 0, 0],
-      [27, 0, 0],
-      [27, 27, 0],
-      [0, 27, 0],
-      [2.5, 2.5, 6.5],
-      [2.5+22, 2.5, 6.5],
-      [2.5+22, 2.5+22, 6.5],
-      [2.5, 2.5+22, 6.5],
+      [bw, 0, 0],
+      [bw, bw, 0],
+      [0, bw, 0],
+      [m, m, h],
+      [m+tw, m, h],
+      [m+tw, m+tw, h],
+      [m, m+tw, h],
     ];
     cubeFaces = [
       [0,1,2,3],  // bottom
