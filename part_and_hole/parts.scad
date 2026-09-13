@@ -1,7 +1,24 @@
-module oled() {
+oled_back();
+
+module oled_back() {
+    led_t=2;
+    spt_t=4;
+    difference() {
+        hull() {
+            cylinder(spt_t,6/2,6/2,$fn=30);
+            translate([0,29,0]) cylinder(spt_t,6/2,6/2,$fn=30);
+        }
+        translate([0,0,-0.5])cylinder(spt_t+1,3/2,3/2);
+        translate([0,29,-0.5]) cylinder(spt_t+1,3/2,3/2);
+        
+        translate([-2,-2,spt_t-led_t]) cube(29+4);
+    }
+}
+
+
+module oled_front() {
     hw=33.8-3;
     hh=32-3;
-
     
     translate([-hw/2,0,0]) union() {
         cylinder(h=20, r=3.2/2, center=true, $fn=20);
