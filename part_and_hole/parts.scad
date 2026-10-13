@@ -1,17 +1,18 @@
 oled_back();
 
 module oled_back() {
-    led_t=2;
-    spt_t=4;
+    led_t=3;
+    spt_t=6;
     difference() {
         hull() {
-            cylinder(spt_t,6/2,6/2,$fn=30);
-            translate([0,29,0]) cylinder(spt_t,6/2,6/2,$fn=30);
+            cylinder(spt_t,10/2,10/2,$fn=30);
+            translate([0,29,0]) cylinder(spt_t,10/2,10/2,$fn=30);
         }
-        translate([0,0,-0.5])cylinder(spt_t+1,3/2,3/2);
-        translate([0,29,-0.5]) cylinder(spt_t+1,3/2,3/2);
+        translate([0,0,-0.5])cylinder(spt_t+1,3/2,3/2,$fn=8);
+        translate([0,29,-0.5]) cylinder(spt_t+1,3/2,3/2,$fn=8);
         
-        translate([-2,-2,spt_t-led_t]) cube(29+4);
+        translate([-2.5,-2.5,spt_t-led_t]) cube(34);
+        translate([-2.5-3.5,-2.5+7,spt_t-led_t-1.5]) cube(20);
     }
 }
 

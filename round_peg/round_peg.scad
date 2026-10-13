@@ -1,5 +1,5 @@
-// peg(60,65,20,8);
-peg(25,30,15,8);
+peg(60,65,20,8);
+// peg(25,30,15,8,true);
 
 module peg(id,od,opn,t,opn_both=false) {
     difference() {

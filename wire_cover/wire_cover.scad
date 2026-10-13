@@ -1,5 +1,6 @@
 
-middle();
+// middle();
+bottom();
 
 module middle() {
     difference() {
@@ -8,6 +9,16 @@ module middle() {
             translate([0,0,0]) cube([10,7.5,20],center=true);
         }
         translate([0,3,0]) cube([7,8,25],center=true);
+    }
+}
+
+module bottom() {
+    difference() {
+        translate([0,9.5/2,0]) union(){
+            translate([0,0,-5]) cube([15,9.5,5+15],center=true);
+            translate([0,0,0]) cube([10,7.5,20],center=true);
+        }
+        translate([0,3,0]) cube([7,8,55],center=true);
     }
 }
 
